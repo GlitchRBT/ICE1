@@ -55,6 +55,8 @@ public class CardTrick {
         
         boolean ans = false;
         
+        Card luckyCard = new Card(11, "Spades");
+        
             for (Card card: magicHand) {
                 if (card.getValue() == userguess.getValue() && card.getSuit().equals(userguess.getSuit())) {
                    ans = true;
@@ -66,6 +68,13 @@ public class CardTrick {
         String response = ans ? "Right guess!": "Wrong guess";
         System.out.println(response);
         //This is a test
+        System.out.print("\n");
+        if (answer) {
+            System.out.println("Congratulations - you win!");
+        } else {
+            System.out.println("Sorry, but you Lose :(");
+        }
+        
     }
     
 }
