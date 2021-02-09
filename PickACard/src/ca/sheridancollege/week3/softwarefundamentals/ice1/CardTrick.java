@@ -65,7 +65,7 @@ public class CardTrick {
         
         String response = ans ? "Right guess!": "Wrong guess";
         System.out.println(response);
-        
+        //This is a test
     }
     
 }
